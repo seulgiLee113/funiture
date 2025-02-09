@@ -11,7 +11,7 @@ body {
 /* 헤더 스타일링 */
 header {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
     position: relative;
     width: 100%;
@@ -19,11 +19,33 @@ header {
     z-index: 1000;
 }
 
+.inner {
+    max-width: 1480px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    position: relative;
+}
+
+.login-logout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.login-logout > span {
+    margin-left: 10px;
+}
+
 nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 2rem;
 }
@@ -44,6 +66,7 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 nav a {
@@ -97,22 +120,14 @@ span {
     margin-bottom: 2rem;
 }
 
-/* .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-} */
-
 .carousel_banner {
-    
     border: 1px solid black;
-    
 }
 
 .product-card {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
@@ -129,7 +144,8 @@ span {
     display: block;
 }
 
-.product-card h3, .product-card p {
+.product-card h3,
+.product-card p {
     padding: 1rem;
 }
 
@@ -161,6 +177,7 @@ span {
     grid-template-columns: repeat(4, 1fr); /* 4열 */
     grid-template-rows: repeat(2, 1fr); /* 2행 */
     gap: 1rem; /* 아이템 간의 간격 */
+    padding: 0px;
 }
 
 .product-grid li {
@@ -173,48 +190,67 @@ span {
     border-radius: 8px; /* 모서리 둥글게 */
 }
 
-.category {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 .category:hover {
     background-color: #3498db;
     color: white;
 }
 
-
 /* 베스트 셀렉트 섹션*/
 
-
 /* swifer */
-.swipe-wrap{
+.swipe-wrap {
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     width: 100%;
+    height: 500px;
+    max-height: 500px;
 }
 
 .best_select-list {
     display: flex;
     flex-direction: row;
-    width: fit-content;
-
+    /* width: fit-content; */
+    height: 100%;
 }
 
 .img-scroll {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
     scroll-margin: 10px;
-    
+    display: block;
+    flex: none;
+    height: 100%;
+    margin: 0 10px 10px 0;
+}
+
+.img-scroll img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 스크롤바의 기본 스타일 */
+.swipe-wrap::-webkit-scrollbar {
+    height: 8px; /* 가로 스크롤바의 높이 */
+}
+
+.swipe-wrap::-webkit-scrollbar-track {
+    background-color: #e0e0e0; /* 트랙의 배경색 */
+    border-radius: 10px;
+}
+
+.swipe-wrap::-webkit-scrollbar-thumb {
+    background-color: #1d3c6e; /* 남색 */
+    border-radius: 10px;
+    height: 10px;
+}
+
+.swipe-wrap::-webkit-scrollbar-thumb:hover {
+    background-color: #172a47; /* 남색이 더 어두운 색 */
 }
 
 .main_banner {
-    
 }
 
 /* 푸터 */

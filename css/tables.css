@@ -1,0 +1,52 @@
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.content-title {
+    border: 1px solid black;
+}
+
+h1 {
+    font-weight: 800;
+    color: #1f1f1f;
+}
+
+.content-title > p {
+    color: gray;
+}
+
+.table-list {
+    /* max-width: 1200px; */
+    border: 1px solid black;
+}
+
+/* .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; 
+} */
+
+.product-item {
+    border: 1px solid blue;
+}
+
+.thumbnail {
+    border: 1px solid red;
+}
+
+.description {
+    margin: 5px;
+    padding: 5px;
+}
+
+.description > span {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+.description > span:last-child {
+    color: black;
+    font-weight: 700;
+}
