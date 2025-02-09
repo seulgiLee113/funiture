@@ -1,3 +1,4 @@
+/* 공통 */
 body {
     font-family: "Jost", "Noto Sans KR", Arial, sans-serif !important;
     line-height: 1.6;
@@ -6,6 +7,10 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+
+.section-sub-box {
+    margin: 10px 0 20px 0;
 }
 
 /* 헤더 스타일링 */
@@ -20,10 +25,10 @@ header {
 }
 
 .inner {
-    max-width: 1480px;
+    max-width: 1320px;
     width: 90%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 12px;
     /* display: flex;
     align-items: center;
     flex-direction: column; */
@@ -37,8 +42,11 @@ header {
     margin-bottom: 20px;
 }
 
-.login-logout > span {
+.login-logout a {
     margin-left: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
 }
 
 nav {
@@ -47,13 +55,13 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 section {
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .logo {
